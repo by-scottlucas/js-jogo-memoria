@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Calibri;
+    font-weight: bold;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    
+}
+
+header{
+    padding: 20px;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #dd2a1b;
+}
+
+span{
+    color: White;
+    font-size: 1.2rem;
+}
+
+.tittle{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 50px;
+    margin-bottom: 14px;
+    background-color: #dd2a1b;
+}
+
+.tabuleiro{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.card {
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    transition: all 1s ease;
+    transform-style:preserve-3d;
+}
+
+.face{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    transition: all 1.5s ease;
+}
+
+.front{
+    transform: translateY(180);
+}
+
+.back{
+    background-image: url(../.src/back.png);
+    backface-visibility: hidden;
+}
+
+.virar-carta{
+    transform: rotateY(180deg);
+}
+
+.dstv-carta{
+    filter: saturate(0);
+    opacity: 0.5;
+}
