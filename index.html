@@ -12,27 +12,25 @@
 
     <div class="container">
 
-        <section class="face">
+        <form class="form-login" id="form-login">
 
-            <form class="group login" id="login-form">
+            <img src="../assets/brain.png" alt="icon" class="logotipo">
 
-                <div class="photo">
-                    <img src="../assets/brain.png" alt="icon">
-                </div>
+            <h1 class="title">
+                Jogo da Memória
+            </h1>
 
-                <h1 class="tittle">Jogo da Memória</h1>
+            <input type="text" id="nickinput" placeholder="Nickname" class="nickinput" required>
 
-                <input type="text" id="nick" placeholder="Nickname" required class="nick">
+            <button type="submit" class="start-button" id="start-button" disabled>
+                Play
+            </button>
 
-                <button type="submit" class="btn-play" id="btn" disabled>Play</button>
-
-            </form>
-
-        </section>
+        </form>
 
     </div>
 
-    <script src="./scripts/login.js"></script>
+    <script src="./scripts/index.js"></script>
 
 </body>
 
