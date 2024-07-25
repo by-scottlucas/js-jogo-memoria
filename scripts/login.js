@@ -20,7 +20,7 @@ const validarInput = ({ target }) => {
 const savePlayer = (event) =>{
     event.preventDefault();
     localStorage.setItem('player', input.value);
-    location = '../game/index.html'
+    location = '../game/game.html'
 }
 
 input.addEventListener('input', validarInput);
