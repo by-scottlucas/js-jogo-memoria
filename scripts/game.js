@@ -4,7 +4,7 @@ const boardElement = document.querySelector('.board');
 const timerElement = document.getElementById('game-timer');
 
 // Arte das cartas
-const cardArts = ['01', '02', '03', '04', '05', '06'];
+const cardArts = ['01', '02', '03', '04', '05', '06', '07', '08', '09'];
 
 // Variáveis de controle do jogo
 let firstCard = '';

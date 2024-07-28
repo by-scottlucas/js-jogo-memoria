@@ -7,38 +7,34 @@
 }
 
 .title {
-    color: white;
+    color: #000;
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 50px;
+    justify-content: center;
     margin-bottom: 14px;
-    background-color: #dd2a1b;
+    font-size: 2.2rem;
 }
 
 .header-board {
-    padding: 20px;
-    margin-bottom: 15px;
-    width: 100%;
-    max-width: 460px;
+    width: 50%;
+    /* max-width: 460px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #dd2a1b;
+    margin-bottom: 20px;
 }
 
 span {
-    color: white;
-    font-size: 1.2rem;
+    color: #000;
+    font-size: 1.4rem;
 }
 
 .board {
     gap: 15px;
-    width: 100%;
+    width: 60%;
     display: grid;
-    max-width: 500px;
-    grid-template-columns: repeat(4, 1fr);
+    /* max-width: 500px; */
+    grid-template-columns: repeat(6, 1fr);
 }
 
 .card {
@@ -59,6 +55,7 @@ span {
     background-size: cover;
     background-position: center;
     transition: all 1.5s ease;
+    border: 1px solid rgba(0,0,0, .1);
 }
 
 .front {
